@@ -1,0 +1,23 @@
+$small: 400px;
+$medium: 401px;
+
+body {
+  padding: 10px;
+}
+
+.mobile_view {
+  @media screen and (max-width: $small) {
+    display: inline;
+  }
+  @media screen and (min-width: $medium) {
+    display: none;
+  }
+}
+.desktop_view {
+  @media screen and (max-width: $small) {
+    display: none;
+  }
+  @media screen and (min-width: $medium) {
+    display: inline;
+  }
+}
